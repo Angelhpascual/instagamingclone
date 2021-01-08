@@ -25,10 +25,10 @@ function MenuPlatform() {
       <Link href="/play-station">
         <Menu.Item as="a">PlayStation</Menu.Item>
       </Link>
-      <Link href="/play-station">
+      <Link href="/x-box">
         <Menu.Item as="a">Xbox</Menu.Item>
       </Link>
-      <Link href="/play-station">
+      <Link href="/switch">
         <Menu.Item as="a">Switch</Menu.Item>
       </Link>
     </Menu>
