@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, Button } from "semantic-ui-react";
-import { useFormik, yupToFormErrors } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
 import { registerApi } from "../../../api/user";
 import { toast } from "react-toastify";
@@ -27,7 +27,7 @@ export default function RegisterForm(props) {
   });
 
   return (
-    <Form className="login-form" onSubmit={formik.handleSubmit}>
+    <Form className="register-form" onSubmit={formik.handleSubmit}>
       <Form.Input
         name="name"
         type="text"
@@ -64,7 +64,7 @@ export default function RegisterForm(props) {
         error={formik.errors.password}
       />
       <div className="actions">
-        <Button type="button" basic>
+        <Button className="button" type="button" basic onClick={showLoginForm}>
           Iniciar Sesión
         </Button>
         <Button type="submit" className="submit" loading={loading}>

@@ -1,0 +1,13 @@
+.login-form {
+  .actions {
+    justify-content: space-between !important;
+  }
+  .ui.actions.button {
+    margin: 0;
+  }
+  .ui.button.submit {
+    background-color: $primary;
+    color: #fff;
+    margin-right: 10px !important;
+  }
+}

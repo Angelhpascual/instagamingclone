@@ -15,7 +15,9 @@ export default function Auth(props) {
     setTitleModal("Crear un nuevo usuario");
   };
   return showLogin ? (
-    <LoginForm showRegisterForm={showRegisterForm}>Estoy en el login</LoginForm>
+    <LoginForm showRegisterForm={showRegisterForm} onCloseModal={onCloseModal}>
+      Estoy en el login
+    </LoginForm>
   ) : (
     <RegisterForm showLoginForm={showLoginForm}>
       Estoy en el registro
